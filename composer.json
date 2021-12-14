@@ -9,5 +9,8 @@
   },
   "scripts": {
     "run-testes": "vendor/bin/phpunit --colors test/"
+  },
+  "require": {
+    "ext-curl": "*"
   }
 }
