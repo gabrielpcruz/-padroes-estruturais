@@ -2,12 +2,12 @@
 
 namespace Alura\DesignPattern\Http;
 
-class CurlHttpAdapter implements HttpAdapter
+class ReactPHPHttpAdapter implements HttpAdapter
 {
     public function post(string $url, array $data = []): void
     {
         // fazer as configurações necessárias
 
-        echo "Usando o Curl Adapter..." . PHP_EOL;
+        echo "Usando o React PHP Adapter..." . PHP_EOL;
     }
 }

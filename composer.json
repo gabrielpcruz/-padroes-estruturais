@@ -11,6 +11,9 @@
     "run-testes": "vendor/bin/phpunit --colors test/"
   },
   "require": {
-    "ext-curl": "*"
+    "ext-curl": "*",
+    "ext-simplexml": "*",
+    "ext-zip": "*",
+    "ext-json": "*"
   }
 }
