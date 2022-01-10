@@ -17,6 +17,11 @@ class CalculadoraDeDescontos
         $descontoMaisDe500Reais->setProximo($semDesconto);
         $descontoMaisDeCinco->setProximo($descontoMaisDe500Reais);
 
-        return $descontoMaisDeCinco->calculaDesconto($orcamento);
+        $descontoCalculado = $descontoMaisDeCinco->calculaDesconto($orcamento);
+
+        $logDesconto = new LogDesconto();
+        $logDesconto->informar($descontoCalculado);
+
+        return $descontoCalculado;
     }
 }
